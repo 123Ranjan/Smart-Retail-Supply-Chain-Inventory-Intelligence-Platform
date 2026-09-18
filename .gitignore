@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+
+# Logs
+logs/
+
+# Temporary files
+python/temp/
+
+# Database credentials
+config/database.ini
+
+# Database credentials
+config/database.ini
+python/etl/config/database.py
+
+# Logs
+logs/
+
+# Temporary files
+python/temp/
