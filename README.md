@@ -529,23 +529,6 @@ Dashboard_Images/
 └── Product_Detail/
 ```
 
-Example:
-
-```markdown
-## Executive Command Center
-
-![Executive Dashboard](Dashboard_Images/Executive_Command_Center/executive_command_center.png)
-```
-
----
-
-## 📄 Power BI Report
-
-The repository also contains the exported Power BI dashboard report:
-
-```text
-Smart_Retail_Supply_Chain_Inventory_Intelligence_Powerbi_Dashboard.pdf
-```
 
 ---
 
