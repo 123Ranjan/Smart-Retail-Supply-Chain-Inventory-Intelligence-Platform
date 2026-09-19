@@ -199,3 +199,23 @@ Key analytical areas include:
                        │
                        ▼
               BUSINESS INSIGHTS
+
+
+
+
+---
+
+#📊 Power BI Dashboard
+
+The final Power BI solution contains six analytical views.
+
+| Page                                   | Purpose                                           |
+| -------------------------------------- | ------------------------------------------------- |
+| **Executive Command Center**           | Executive KPIs and overall business health        |
+| **Sales & Profitability Intelligence** | Sales, profit, discount and regional performance  |
+| **Inventory Intelligence**             | Inventory health, reorder risk and stock pressure |
+| **Root Cause Analysis**                | Inventory risk drivers and stock-gap analysis     |
+| **Product & Decision Intelligence**    | Product profitability and ranking analysis        |
+| **Product Detail & Decision View**     | Product-level drill-through analysis              |
+
+---
