@@ -33,7 +33,6 @@
 - [Running the Project](#-running-the-project)
 - [Key Business Insights](#-key-business-insights)
 - [Dashboard Screenshots](#-dashboard-screenshots)
-- [Power BI Report](#-power-bi-report)
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
