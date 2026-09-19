@@ -8,7 +8,7 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-11557C.svg?style=for-the-badge&logo=matplotlib&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-336791.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-Analytics-orange.svg?style=for-the-badge)
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811.svg?style=for-the-badge&logo=powerbi&logoColor=black)
+![Power%20BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811.svg?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-35%2B%20Measures-purple.svg?style=for-the-badge)
 
 </div>
@@ -32,13 +32,13 @@
 - [Configuration](#-configuration)
 - [Running the Project](#-running-the-project)
 - [Key Business Insights](#-key-business-insights)
-- [Dashboard Screenshots](#-dashboard-screenshots)
+- [Dashboard Images](#-dashboard-images)
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
 ---
 
-## 🎯 Overview
+# 🎯 Overview
 
 The **Smart Retail Supply Chain & Inventory Intelligence Platform** is an end-to-end analytics project designed to analyze retail sales, profitability, inventory health, product performance, returns, and supply-chain risk.
 
@@ -54,9 +54,9 @@ The platform transforms raw retail datasets into structured analytical data and 
 
 ---
 
-## ✨ Key Features
+# ✨ Key Features
 
-### 📊 Sales & Profitability Analytics
+## 📊 Sales & Profitability Analytics
 
 - Total Sales and Total Profit analysis
 - Profit Margin analysis
@@ -72,7 +72,7 @@ The platform transforms raw retail datasets into structured analytical data and 
 
 ---
 
-### 📦 Inventory Intelligence
+## 📦 Inventory Intelligence
 
 - Total inventory stock monitoring
 - Reorder risk analysis
@@ -84,16 +84,18 @@ The platform transforms raw retail datasets into structured analytical data and 
 - Low-stock product analysis
 - Inventory risk classification
 
-Inventory risk is classified into:
+### Inventory Risk Categories
 
-- Normal
-- Low Stock
-- Fast Turnover + Low Stock
-- High Demand + Low Stock
+```text
+Normal
+Low Stock
+Fast Turnover + Low Stock
+High Demand + Low Stock
+```
 
 ---
 
-### 🔎 Root Cause Analysis
+## 🔎 Root Cause Analysis
 
 The platform performs inventory-focused Root Cause Analysis to identify the drivers behind stock pressure.
 
@@ -108,7 +110,7 @@ Key analytical areas include:
 
 ---
 
-### 🛍️ Product & Decision Intelligence
+## 🛍️ Product & Decision Intelligence
 
 - Top profitable products
 - Top products by sales
@@ -121,7 +123,7 @@ Key analytical areas include:
 
 ---
 
-## 📈 Project Highlights
+# 📈 Project Highlights
 
 | Metric | Value |
 |---|---:|
@@ -136,9 +138,9 @@ Key analytical areas include:
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Data Processing & Analysis
+## Data Processing & Analysis
 
 | Technology | Purpose |
 |---|---|
@@ -147,7 +149,7 @@ Key analytical areas include:
 | **NumPy** | Numerical calculations and statistical thresholds |
 | **Matplotlib** | Exploratory Data Analysis and visualization |
 
-### Database & Analytics
+## Database & Analytics
 
 | Technology | Purpose |
 |---|---|
@@ -155,7 +157,7 @@ Key analytical areas include:
 | **SQL** | Business analysis and analytical views |
 | **SQLAlchemy** | Database connectivity and loading |
 
-### Business Intelligence
+## Business Intelligence
 
 | Technology | Purpose |
 |---|---|
@@ -164,54 +166,54 @@ Key analytical areas include:
 
 ---
 
-## 🔄 Data Pipeline
+# 🔄 Data Pipeline
 
 ```text
-                    RAW DATA
-                       │
-                       ▼
-              ┌─────────────────┐
-              │ Python Cleaning │
-              │   Pandas        │
-              └─────────────────┘
-                       │
-                       ▼
-              PROCESSED DATA
-                       │
-                       ▼
-              ┌─────────────────┐
-              │ Python ETL      │
-              │ Extract         │
-              │ Transform       │
-              │ Load            │
-              └─────────────────┘
-                       │
-                       ▼
-              ┌─────────────────┐
-              │   PostgreSQL    │
-              │   Data Warehouse│
-              └─────────────────┘
-                       │
-                       ▼
-                 SQL Analytics
-                       │
-                       ▼
-              ┌─────────────────┐
-              │    Power BI     │
-              │  + DAX Model    │
-              └─────────────────┘
-                       │
-                       ▼
-              BUSINESS INSIGHTS
+                         RAW DATA
+                            │
+                            ▼
+                  ┌──────────────────┐
+                  │ Python Cleaning  │
+                  │     Pandas       │
+                  └──────────────────┘
+                            │
+                            ▼
+                     PROCESSED DATA
+                            │
+                            ▼
+                  ┌──────────────────┐
+                  │    Python ETL    │
+                  │ Extract          │
+                  │ Transform        │
+                  │ Load             │
+                  └──────────────────┘
+                            │
+                            ▼
+                  ┌──────────────────┐
+                  │    PostgreSQL    │
+                  │  Data Warehouse  │
+                  └──────────────────┘
+                            │
+                            ▼
+                      SQL Analytics
+                            │
+                            ▼
+                  ┌──────────────────┐
+                  │     Power BI     │
+                  │    + DAX Model   │
+                  └──────────────────┘
+                            │
+                            ▼
+                    BUSINESS INSIGHTS
 ```
 
 ---
 
-## 🏗️ Data Warehouse
+# 🏗️ Data Warehouse
 
 The PostgreSQL warehouse follows a dimensional modeling approach with fact and dimension tables.
 
-### Fact Tables
+## Fact Tables
 
 ```text
 fact_sales
@@ -219,7 +221,7 @@ fact_inventory
 fact_returns
 ```
 
-### Dimension Tables
+## Dimension Tables
 
 ```text
 dim_date
@@ -237,7 +239,7 @@ This structure supports flexible analytical reporting and Power BI modeling.
 
 ---
 
-## 📊 Power BI Dashboard
+# 📊 Power BI Dashboard
 
 The final Power BI solution contains six analytical views.
 
@@ -267,7 +269,7 @@ The final Power BI solution contains six analytical views.
 
 ---
 
-## 🧮 DAX Analytics
+# 🧮 DAX Analytics
 
 The Power BI model contains **35+ DAX measures and KPIs** covering:
 
@@ -292,7 +294,7 @@ Return Rate
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
 Smart-Retail-Supply-Chain-Inventory-Intelligence-Platform/
@@ -355,9 +357,9 @@ Smart-Retail-Supply-Chain-Inventory-Intelligence-Platform/
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
-### Prerequisites
+## Prerequisites
 
 Make sure you have installed:
 
@@ -370,7 +372,7 @@ Make sure you have installed:
 
 ---
 
-### Step 1: Clone the Repository
+## Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/123Ranjan/Smart-Retail-Supply-Chain-Inventory-Intelligence-Platform.git
@@ -379,16 +381,16 @@ cd Smart-Retail-Supply-Chain-Inventory-Intelligence-Platform
 
 ---
 
-### Step 2: Create a Virtual Environment
+## Step 2: Create a Virtual Environment
 
-**Windows**
+### Windows
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**macOS / Linux**
+### macOS / Linux
 
 ```bash
 python3 -m venv .venv
@@ -397,7 +399,7 @@ source .venv/bin/activate
 
 ---
 
-### Step 3: Install Dependencies
+## Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -405,29 +407,38 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Configuration
+# ⚙️ Configuration
 
-Create your local database configuration using the provided example:
+The repository contains a safe configuration template:
 
 ```text
 config/database.example.ini
 ```
 
-Create:
+Create your local configuration file:
 
 ```text
 config/database.ini
 ```
 
-and configure your PostgreSQL connection locally.
+Example:
 
-**Do not commit `database.ini` or database passwords to GitHub.**
+```ini
+[postgresql]
+host=localhost
+port=5432
+database=smart_retail_dw
+user=YOUR_USERNAME
+password=YOUR_PASSWORD
+```
+
+> ⚠️ **Do not commit `database.ini`, database passwords, API keys, or other credentials to GitHub.**
 
 ---
 
-## ▶️ Running the Project
+# ▶️ Running the Project
 
-### 1. Run Data Cleaning
+## 1. Run Data Cleaning
 
 ```bash
 python -m python.cleaning.data_cleaning
@@ -439,9 +450,18 @@ This generates cleaned datasets inside:
 data/processed/
 ```
 
+Expected outputs:
+
+```text
+data/processed/
+├── superstore_cleaned.csv
+├── inventory_cleaned.csv
+└── returns_cleaned.csv
+```
+
 ---
 
-### 2. Run Data Profiling
+## 2. Run Data Profiling
 
 ```bash
 python -m python.profiling.data_profiling
@@ -449,7 +469,7 @@ python -m python.profiling.data_profiling
 
 ---
 
-### 3. Run Exploratory Data Analysis
+## 3. Run Exploratory Data Analysis
 
 ```bash
 python -m python.analysis.eda
@@ -457,7 +477,7 @@ python -m python.analysis.eda
 
 ---
 
-### 4. Run Inventory Analysis
+## 4. Run Inventory Analysis
 
 ```bash
 python -m python.analysis.inventory_eda
@@ -465,7 +485,7 @@ python -m python.analysis.inventory_eda
 
 ---
 
-### 5. Run Root Cause Analysis
+## 5. Run Root Cause Analysis
 
 ```bash
 python -m python.analysis.rca_analysis
@@ -473,7 +493,7 @@ python -m python.analysis.rca_analysis
 
 ---
 
-### 6. Generate Business Insights
+## 6. Generate Business Insights
 
 ```bash
 python -m python.analysis.business_insights
@@ -481,57 +501,101 @@ python -m python.analysis.business_insights
 
 ---
 
-### 7. Run ETL Pipeline
+## 7. Run the ETL Pipeline
 
 ```bash
 python -m python.etl.etl_pipeline
 ```
 
-The pipeline loads the transformed data into the PostgreSQL data warehouse.
+The ETL pipeline extracts the source datasets, performs transformations, builds the fact and dimension tables, and loads the data into PostgreSQL.
 
 ---
 
-## 💡 Key Business Insights
+# 💡 Key Business Insights
 
 The analysis identified several important inventory and profitability indicators:
 
-- **45.96%** of products require replenishment.
-- **455 products** are below their reorder level.
-- Total stock gap is approximately **13,946 units**.
-- **112 products** fall into the High Demand + Low Stock category.
-- **170 products** fall into the Fast Turnover + Low Stock category.
-- **28%+ of products** fall into the combined high-demand/fast-turnover low-stock pressure groups.
+- **45.96%** reorder risk across the analyzed inventory dataset.
+- **455 products** requiring replenishment.
+- Total stock gap of approximately **13,946 units**.
+- **112 products** classified as **High Demand + Low Stock**.
+- **170 products** classified as **Fast Turnover + Low Stock**.
+- Approximately **28%+ of products** fall into the combined high-demand/fast-turnover low-stock pressure groups.
 - Technology and Office Supplies show stronger profitability compared with Furniture in the analyzed dataset.
 
 These findings are used in the Power BI dashboard to support inventory prioritization and business analysis.
 
 ---
 
-## 🖼️ Dashboard Screenshots
+# 🖼️ Dashboard Images
 
-Dashboard images can be found in:
+The Power BI dashboard screenshots are available under:
 
 ```text
 Dashboard_Images/
 ```
 
-Recommended organization:
+### 📊 Executive Command Center
 
-```text
-Dashboard_Images/
-│
-├── Executive_Command_Center/
-├── Sales_Profitability/
-├── Inventory_Intelligence/
-├── Root_Cause_Analysis/
-├── Product_Decision_Intelligence/
-└── Product_Detail/
-```
+<div align="center">
 
+<img width="900" alt="Executive Command Center" src="https://github.com/user-attachments/assets/230ba700-d776-43cb-9d47-b6ef6cb09cf1" />
+
+</div>
 
 ---
 
-## 🔮 Future Improvements
+### 📈 Sales & Profitability Intelligence
+
+<div align="center">
+
+<img width="900" alt="Sales and Profitability Intelligence" src="https://github.com/user-attachments/assets/9ad3c85c-6039-4e7e-bb95-b29333a66985" />
+
+</div>
+
+---
+
+### 📦 Inventory Intelligence
+
+<div align="center">
+
+<img width="900" alt="Inventory Intelligence" src="https://github.com/user-attachments/assets/e20386e0-7d3c-479f-9a1c-637f22a18d12" />
+
+</div>
+
+---
+
+### 🔎 Root Cause Analysis
+
+<div align="center">
+
+<img width="900" alt="Root Cause Analysis" src="https://github.com/user-attachments/assets/4a431e1e-828c-42c9-ab62-08f2f836c460" />
+
+</div>
+
+---
+
+### 🛍️ Product & Decision Intelligence
+
+<div align="center">
+
+<img width="900" alt="Product and Decision Intelligence" src="https://github.com/user-attachments/assets/4a69ef5c-af96-4464-87eb-dcfd985add88" />
+
+</div>
+
+---
+
+### 📋 Product Detail & Decision View
+
+<div align="center">
+
+<img width="900" alt="Product Detail and Decision View" src="https://github.com/user-attachments/assets/e64aebbd-de6e-4716-800f-e2a9c7e5b1f2" />
+
+</div>
+
+---
+
+# 🔮 Future Improvements
 
 - Automated scheduled ETL
 - Data quality monitoring
@@ -544,7 +608,7 @@ Dashboard_Images/
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Malaya Ranjan Mohanty**
 
